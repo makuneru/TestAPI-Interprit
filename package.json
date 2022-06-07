@@ -1,0 +1,35 @@
+{
+  "name": "api-test-automation-framework",
+  "version": "1.0.0",
+  "description": "API Test Automation Framework",
+  "main": "index.js",
+  "author": "Macnel Cayanan",
+  "scripts": {
+    "test:prod": "env NODE_ENV=prod mocha -r ts-node/register -r tsconfig-paths/register \"src/test/resreq/**/*.test.ts\"",
+    "test:dev": "env NODE_ENV=dev mocha -r ts-node/register -r tsconfig-paths/register \"src/test/resreq/**/*.test.ts\"",
+    "test:qa": "env NODE_ENV=qaa mocha -r ts-node/register -r tsconfig-paths/register \"src/test/resreq/**/*.test.ts\"",
+    "test:data-prep": "env NODE_ENV=dev mocha -r ts-node/register -r tsconfig-paths/register \"src/test/resreq/data-prep/*.test.ts\""
+  },
+  "devDependencies": {
+    "@types/chai": "^4.3.1",
+    "@types/mocha": "^9.1.1",
+    "@types/mochawesome": "^6.2.1",
+    "@types/node": "^17.0.35",
+    "@types/shelljs": "^0.8.11",
+    "allure-mocha": "^2.0.0-beta.16",
+    "axios": "^0.27.2",
+    "chai": "^4.3.6",
+    "dotenv": "^16.0.1",
+    "form-data": "^4.0.0",
+    "mocha": "^10.0.0",
+    "mocha-multi-reporters": "^1.5.1",
+    "mochawesome": "^7.1.3",
+    "newman": "^5.3.2",
+    "prettier": "^2.6.2",
+    "shelljs": "^0.8.5",
+    "ts-node": "^10.8.0",
+    "tsconfig-paths": "^4.0.0",
+    "typescript": "^4.7.2",
+    "winston": "^3.7.2"
+  }
+}

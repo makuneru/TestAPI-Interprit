@@ -1,0 +1,8 @@
+{
+  "endPoints":{
+    "users": "users/",
+    "register": "register/",
+    "login": "login/",
+    "unknown":"unknown/"
+  }
+}

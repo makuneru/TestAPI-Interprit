@@ -1,0 +1,12 @@
+{
+  "diff": true,
+  "package": "./package.json",
+  "reporter":["mocha-multi-reporters"],
+  "slow": "3000",
+  "timeout": "10000",
+  "reporter-option": "configFile=.mocharc.json",
+  "reporterEnabled": "allure-mocha, mochawesome",
+  "allureMochaReporterOptions": {
+    "resultsDir": "./allure-results"
+  }
+}
